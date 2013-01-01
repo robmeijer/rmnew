@@ -1,0 +1,80 @@
+/***** BODY STYLES *****/
+body {background: #2B3A42; color: #BDD4DE; font: 14px Verdana, Arial, Helvetica, sans-serif;}
+
+a {border-bottom: 1px dashed; color: #FF530D; text-decoration: none;}
+
+a:hover {border-bottom: 1px solid; color: #EFEFEF;}
+
+h1 {color: #EFEFEF; font-family: Arial, Helvetica, sans-serif; letter-spacing: -0.1em; margin-bottom: -13px;}
+
+small {display: block; margin-left: 4px;}
+
+#container {margin: 0 auto;}
+
+
+/***** HEADER STYLES *****/
+#header {border-bottom: 1px dashed #3F5765;}
+
+#nav li {float: left; font-family: 'Yanone Kaffeesatz', Verdana, Arial, Helvetica, sans-serif; text-transform: uppercase;}
+
+#nav li a {border: 0; display: block; padding: 9px 15px;}
+
+.current {color: #BDD4DE; }
+
+
+
+
+
+
+
+/***** RESPONSIVE STYLES *****/
+
+/* Portrait phone and down */
+h1 {font-size: 64px; font-weight: bold;}
+small {font-size: 10px;}
+#header {height: 90px; padding: 5px 0;}
+#title {margin: 0 auto; width: 270px;}
+#container, #content {width: auto;}
+#nav, #aside {display: none;}
+
+/* Landscape phone */
+@media (min-width: 533px) {
+	#wrapper {margin-left: 160px;}
+}
+
+/* Portrait tablet */
+@media (min-width: 768px) {
+	h1 {font-size: 64px; font-weight: bold;}
+	#header {height: 130px; padding: 5px 0;}
+	#title {margin: 0; width: auto;}
+	#nav li {font-size: 22px;}
+	.current {font-size: 28px;}
+	#nav {display: block; margin-top: 0px;}
+	#container {width: 768px;}
+	#content {width: 578px;}
+}
+
+/* Landscape tablet and desktop */
+@media (min-width: 1006px) {
+	h1 {font-size: 72px;}
+	small {font-size: 12px;}
+	#header {height: 105px; padding: 25px 0;}
+	#title {float: left;}
+	#nav {float: right; margin-top: 20px;}
+	#nav li {font-size: 26px;}
+	.current {font-size: 32px;}
+	#aside {display: block;}
+	#container {width: 960px;}
+	#content {width: 620px;}
+	#wrapper {margin-right: 160px;}
+}
+
+/* Large desktop */
+@media (min-width: 1280px) {
+	h1 {font-size: 84px;}
+	#header {height: 115px; padding: 35px 0;}
+	#nav li {font-size: 32px;}
+	.current {font-size: 40px;}
+	#container {width: 1200px;}
+	#content {min-width: 800px;}
+}
